@@ -35,7 +35,7 @@ delimiter :: Content
 delimiter = ":"
 
 redirectUrl :: FB.RedirectUrl
-redirectUrl = "httsp://www.google.com"
+redirectUrl = "https://www.google.com"
 
 parseArgs :: [String] -> IO.FilePath
 parseArgs []         = error $ "No argument given. Please provide " ++
