@@ -59,6 +59,5 @@ main = do
     fileContent <- IO.readFile $ parseArgs args
     putStrLn $ show $ map (\(p,d) -> (T.unpack p,T.unpack d)) $
         parseConversation $ T.pack fileContent
-    return ()
 
 -- state <- FB.getUserAccessTokenStep1 redirectUrl ["publish_actions"]
